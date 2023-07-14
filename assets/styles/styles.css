@@ -1,0 +1,173 @@
+body {
+  background-color: rgb(214, 214, 200);
+  margin: 0;
+  padding: 0;
+}
+h2,
+h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #c0392b;
+}
+canvas {
+  border: 3px solid brown;
+  background-color: rgb(238, 238, 216);
+}
+
+header {
+  background-color: #c0392b;
+  height: 150px;
+  width: 100vw;
+  margin-bottom: 50px;
+}
+
+h1 {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 34px;
+  margin: 0;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.container_flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 2500px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 800px) {
+  .container_flex {
+    height: 100vh;
+  }
+}
+
+.titres_h3 {
+  height: 20px;
+  width: 550px;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  color: rgb(95, 2, 2);
+}
+
+#chart-container {
+  background-color: rgb(238, 238, 216);
+  padding: 10px 30px 0 15px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.interactive_key {
+  min-height: 400px;
+  min-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+}
+.semi_circulaire {
+  min-height: 400px;
+  min-width: 600px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 800px) {
+  .semi-circulaire {
+    min-height: 550px;
+    min-width: 700px;
+  }
+}
+.funnel {
+  min-height: 400px;
+  min-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.horseshoe {
+  min-height: 400px;
+  min-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+}
+.switch {
+  min-height: 400px;
+  min-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+}
+.montagnes {
+  min-height: 400px;
+  min-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+div#canvas-container {
+  position: relative;
+  width: 600px;
+  height: 250px;
+}
+
+div#canvas-container canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 580px;
+  height: 250px;
+  background-color: rgb(238, 238, 216);
+  transition: all 1s;
+  opacity: 1;
+}
+@media only screen and (min-width: 800px) {
+  div#canvas-container canvas {
+    width: 650px;
+    height: 290px;
+  }
+}
+
+div#canvas-container canvas#cvs1 {
+  top: 125px;
+  left: 300px;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  transform: rotate(90deg);
+}
+
+ul li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: white;
+  list-style-type: none;
+  padding: 2px;
+}
+ul li a:hover {
+  text-decoration: underline;
+}
+
+.sources {
+  color: orange;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.sources a:visited {
+  color: rgb(252, 249, 87);
+}
+
+.sources a:focus {
+  letter-spacing: 0.7px;
+}
+
+footer {
+  background-color: brown;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 16px;
+  height: 130px;
+  width: 100vw;
+  padding-top: 10px;
+  text-align: center;
+}
